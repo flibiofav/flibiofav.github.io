@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="favorits.css">
+	<title>Favorits</title>
+</head>
+
+<body>
+<span id="edit" class="petit" onclick="ToggleDisplay()">Editar</span>
+<span id="save" class="petit" onclick="SaveJSON()">Guardar</span>
+<h2>Favorits</h2>
+<div class="flex-container" id="capses"></div>
+<div id="popup1" class="popup">
+	<div class="popup-content">
+		<div class="popup-header">
+			<span id="popup_titol"></span><span class="close" onclick="TancarPopup()">&times;</span>
+		</div>
+		<div class="popup-body">
+			<p id="popup_cos"></p>
+		</div>
+	</div>
+</div>
+
+<script src="favorits.js"></script>
+
+</body>
+</html>

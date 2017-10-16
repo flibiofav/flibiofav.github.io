@@ -1,0 +1,134 @@
+h2 {
+	font-size: 1.5em;
+	font-weight: bold;
+	font-family: Verdana;
+	text-align: center;
+}
+
+body {
+	font-family: Verdana;
+	background-color: #FFFFD3;
+}
+
+a {
+	font-family: Verdana;
+	text-decoration: none;
+}
+
+a:link {
+	color: #F0FFFF;
+}
+
+a:visited {
+	color: #666699;
+}
+
+a:hover {
+    color: #F0FFFF;
+	text-decoration: underline;
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+	-webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    margin: 0px;
+	min-width: 200px;
+	padding: 12px;
+	text-align: center;
+}
+
+.titol {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+.petit {
+	font-size: 0.66em;
+	text-decoration: underline;
+	font-family: Verdana;
+}
+
+.edit-items, .nou-items {
+	color: #EEEEEE;
+	display: none;
+}
+
+.edit-items:hover,
+.edit-items:focus,
+.nou-items:hover,
+.nou-items:focus,
+.petit:hover,
+.petit:focus {
+	cursor: pointer;
+}
+
+#save {
+	visibility: hidden;
+}
+
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.popup-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    /*width: 354px;*/
+	/*width: 200px;*/
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animateright;
+    -webkit-animation-duration: 0.6s;
+    animation-name: animateright;
+    animation-duration: 0.6s
+}
+
+@-webkit-keyframes animateright {
+    from {right:-300px; opacity:0} 
+    to {right:0; opacity:1}
+}
+
+@keyframes animateright {
+    from {right:-300px; opacity:0}
+    to {right:0; opacity:1}
+}
+
+.close {
+    color: white;
+    float: right;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.popup-header {
+    padding: 4px 8px;
+	font-weight: bold;
+}
+
+.popup-body {
+	padding: 4px 16px;
+}
